@@ -1,0 +1,30 @@
+#BookList{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#BookList caption{
+    font-family: Broadway;
+    font-size: 30px;
+    font-weight: bold;
+    color: lightgreen;
+    padding-bottom: 5px;
+}
+
+#BookList td, #BookList th{
+    border: 2px solid skyblue;
+    padding: 8px;
+}
+
+#BookList th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: coral;
+    color: azure;
+    font-size: large;
+}
+
+#BookList tr:nth-child(even){
+    background-color: bisque;
+}

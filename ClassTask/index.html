@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+    <script src="author.model.js"></script>
+    <script src="book.model.js"></script>
+    <script src="author.service.js"></script>
+    <script src="book.service.js"></script>
+    <script src="library.model.js"></script>
+    <script src="view.js"></script>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<div id = 'clock'></div>
+
+<script>
+    setInterval(Clock, 500);
+    function Clock() {
+        let time = new Date();
+        let hrs = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+        if(hrs < 10){
+            hrs = '0' + hrs;
+        }
+        if(min < 10){
+            min = '0' + min;
+        }
+        if(sec < 10) {
+            sec = '0' + sec;
+        }
+        document.getElementById('clock').style.fontSize = "25px";
+        document.getElementById('clock').style.textAlign = "center"
+        document.getElementById('clock').style.color = '#FF3647';
+        document.getElementById('clock').innerHTML =
+            hrs + ' : ' + min + ' : ' + sec;
+    }
+</script>
+</body>
+
+</html>
